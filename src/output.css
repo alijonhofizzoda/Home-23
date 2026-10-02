@@ -35,6 +35,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
+    --tracking-tight: -0.025em;
     --leading-tight: 1.25;
     --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
@@ -258,6 +259,9 @@
   .flex {
     display: flex;
   }
+  .grid {
+    display: grid;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -354,6 +358,9 @@
   .resize {
     resize: both;
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -368,6 +375,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -411,6 +421,9 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
+  .bg-\[\#F2F7FF\] {
+    background-color: #F2F7FF;
+  }
   .bg-slate-50 {
     background-color: var(--color-slate-50);
   }
@@ -447,6 +460,15 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-\[80px\] {
+    padding-inline: 80px;
+  }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
+  .px-\[130px\] {
+    padding-inline: 130px;
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -459,8 +481,14 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .py-\[20px\] {
+    padding-block: 20px;
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -533,6 +561,10 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
   .text-\[\#00A896\] {
     color: #00A896;
   }
@@ -541,6 +573,9 @@
   }
   .text-\[\#8A2BE2\] {
     color: #8A2BE2;
+  }
+  .text-\[\#29B6D8\] {
+    color: #29B6D8;
   }
   .text-\[\#702A8A\] {
     color: #702A8A;
@@ -703,6 +738,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -850,6 +889,7 @@
       --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
