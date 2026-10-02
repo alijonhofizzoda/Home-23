@@ -1,45 +1,115 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
     <header class="w-full bg-white border-b border-gray-100 py-4 px-6">
-        <div class="max-w-[1400px] mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-4">
-            <div class="flex items-center gap-2 cursor-pointer">
-                <div class="w-[260px] h-[24.84px] flex items-center justify-center">
-                <img src="./images/logo.svg" alt="logo">
-                </div>
+      <div class="max-w-[1400px] mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 cursor-pointer">
+            <div class="w-[260px] h-[24.84px] flex items-center justify-center">
+              <img src="./images/logo.svg" alt="logo" />
             </div>
-            
-            <div class="text-xs text-gray-400 border-l border-gray-200 pl-4">
-                Аналитика и оцифровка продаж<br />
-                <span class="text-[#702A8A] font-semibold">Wildberries</span> и <span class="text-[#1065FF] font-semibold">Ozon</span>
-            </div>
-            </div>
+          </div>
 
-            <nav class="flex items-center gap-8 text-sm font-medium text-gray-700">
-                <p>О нас</p>
-                <p>Возможности</p>
-                <p>Тарифы</p>
-            </nav>
-
-            <div class="flex items-center gap-5">
-            <div class="flex items-center gap-2 text-sm font-bold text-gray-800 hover:text-black transition-colors cursor-pointer">
-                <div class="w-[14px] h-[13px] flex items-center justify-center">
-                <img src="./images/vxod.svg" alt="vxod">
-                </div>
-                Вход
-            </div>
-            
-            <button class="bg-gradient-to-r from-[#00A896] to-[#0081A7] hover:opacity-90 text-white text-sm font-medium px-6 py-2.5 rounded-full transition duration-150">
-                Зарегистрироваться
-            </button>
-            </div>
+          <div class="text-xs text-gray-400 border-l border-gray-200 pl-4">
+            Аналитика и оцифровка продаж<br />
+            <span class="text-[#702A8A] font-semibold">Wildberries</span> и
+            <span class="text-[#1065FF] font-semibold">Ozon</span>
+          </div>
         </div>
+
+        <nav class="flex items-center gap-8 text-sm font-medium text-gray-700">
+          <p>О нас</p>
+          <p>Возможности</p>
+          <p>Тарифы</p>
+        </nav>
+
+        <div class="flex items-center gap-5">
+          <div
+            class="flex items-center gap-2 text-sm font-bold text-gray-800 hover:text-black transition-colors cursor-pointer"
+          >
+            <div class="w-[14px] h-[13px] flex items-center justify-center">
+              <img src="./images/vxod.svg" alt="vxod" />
+            </div>
+            Вход
+          </div>
+
+          <button
+            class="bg-gradient-to-r from-[#00A896] to-[#0081A7] hover:opacity-90 text-white text-sm font-medium px-6 py-2.5 rounded-full transition duration-150"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+      </div>
     </header>
-</body>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="w-full bg-slate-50 py-16 px-6 w-[50%]">
+      <div
+        class="max-w-[1400px] mx-auto flex items-center justify-between gap-12"
+      >
+        <div class="gap-6 max-w-[820px]">
+          <h1 class="text-[40px] font-extrabold text-gray-900">
+            <span class="text-[#00A896]">Внутренняя аналитика</span> <br />
+            и финансовый учёт для бизнеса <br />
+            на маркетплейсах
+
+            <span class="flex items-center gap-2 align-middle ml-2">
+              <div class="w-[136px] h-[56px] flex items-center justify-center">
+                <img src="./images/Ozon WB.svg" alt="Ozon/WB" />
+              </div>
+            </span>
+          </h1>
+          <p class="text-gray-500 text-lg">
+            Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и
+            анализе отчётов
+          </p>
+          <div
+            class="relative overflow-hidden bg-gradient-to-r from-[#00A896] to-[#0081A7] rounded-3xl p-8 text-white w-full max-w-[782px] flex flex-col justify-center gap-6"
+          >
+            <img
+              src="./images/lentaCHAP.svg"
+              alt="lentaCHAP"
+              class="absolute -left-10 -bottom-10 w-[296px] h-[192px] opacity-20% rotate-[115.45 deg]"
+            />
+
+            <img
+              src="./images/lentaROST.svg"
+              alt="lentaROST"
+              class="absolute -right-10 top-1 w-[300px] h-[192px] opacity-40% -rotate-[-26.22 deg]"
+            />
+
+            <p class="text-base font-medium relative z-10">
+              Начните свой 3-дневный пробный период <br />
+              с неограниченным доступом ко всем возможностям
+            </p>
+
+            <div
+              class="bg-white rounded-full p-1.5 flex items-center justify-between pl-6 max-w-[500px] relative z-10"
+            >
+              <input
+                type="email"
+                placeholder="Введите ваш email"
+                class="w-full text-gray-700 outline-none text-sm placeholder:text-gray-400 bg-transparent"
+              />
+              <button
+                class="bg-gradient-to-r from-[#00A896] to-[#0081A7] hover:brightness-95 text-white font-medium text-sm px-8 py-3 rounded-full transition duration-150"
+              >
+                Попробовать
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[684px] h-[686px] flex items-center justify-center">
+          <div class="w-full h-full flex items-center justify-center">
+            <img src="./images/karopkahoo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
